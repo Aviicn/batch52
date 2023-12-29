@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <title>Contact me</title>
+</head>
+
+</html>
+
+<body>
+    <nav class="nav">
+        <div class="container-nav">
+            <ul>
+                <li>
+                    <img src="assets/img/dumbways logo.png" alt="assets/img/dumbways logo.png" />
+                </li>
+                <li class="nav-link">
+                    <a href="index.html ">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">My Project</a>
+                </li>
+            </ul>
+            <div class="btn-contact">
+                <a href="contact.html" class="btn-nav">Contact me</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+
+    <div class="container-form">
+        <form class="form">
+            <h1>GET IN TOUCH</h1>
+            <label class="label">Name</label>
+            <input type="text" class="input-contact" id="inputName">
+            <label class="label">Email</label>
+            <input type="text" class="input-contact" id="inputContact">
+            <label class="label">Phone Number</label>
+            <input type="text" class="input-contact" id="inputPhoneNumber">
+            <label class="label">Subject</label>
+            <select class="input-contact" id="inputSubject">
+                <option>Frontend Deleveloper</option>
+                <option>Backend Deleveloper</option>
+                <option>Fullstack Deleveloper</option>
+            </select>
+            <label class="label-contact">Your Message</label>
+            <textarea class="input-contact" style="height: 100px;" id="inputMessage"></textarea>
+            <div class="btn-submit">
+                <input type="button" value="submit" class="submit-contact" onclick="submitData()">
+            </div>
+        </form>
+    </div>
+    <!-- Content end -->
+</body>
+
+</html>
