@@ -1,7 +1,7 @@
 let dataBlog = [];
 let dataIcons = [];
 
-function submitBlog() {
+function submitBlog() { 
    
     let inputProject = document.getElementById('inputTitle').value;
     let startDate = document.getElementById('startDate').value;
@@ -26,15 +26,17 @@ function submitBlog() {
     // Memeriksa apakah nilai input kosong
     if (!inputProject) {
         alert('Project Name harus diisi!');
+        return;
     } else if (!startDate) {
         alert('Start Date harus diisi!');
+        return;
     } else if (!endDate) {
         alert('End Date harus diisi!');
+        return;
     } else if (!desc) {
         alert('Description harus diisi!');
-    } else {
-        //alert('Project berhasil terkirim');
-    }
+        return;
+    } 
 
     let inputImage = document.getElementById('inputImage').files;
 
@@ -67,24 +69,21 @@ function renderBlog() {
         const iconsHTML = dataIcons[i].map(icon => `<img src="${icon}" style="width: 20px;">`).join('');
 
         document.getElementById('contents').innerHTML += `<div class="container-card">
-        <img src="${dataBlog[i].image}" class="img-card" style="width: 300px; height:300px;">
-        <div class="text-card">
+        <img src="${dataBlog[i].image}" class="img-card">
+        <div>
 
-            <a href="project-detail.html">${dataBlog[i].project}</a>
+            <a href="project-detail.html" class="text-title">${dataBlog[i].project}</a>
 
-            <h4>durasi : 3 bulan</h4>
+            <p class="text-duration">durasi : 3 bulan</p>
 
-            <p>${dataBlog[i].desc}</p>
+            <p class="text-card">${dataBlog[i].desc}</p>
             
-            <div class="checkbox" style="margin-top: 20px;">
-
-            </div>
         </div>
-
-        <img src="assets/icon/google-play.svg" alt="" width="40px">
-        <img src="assets/icon/android1.png" alt="" width="40px">
-        <img src="assets/icon/java.svg" alt="" width="40px">
-
+<div class="icon-cards" >
+        <img src="assets/icon/google-play.svg" class="icon-card">
+        <img src="assets/icon/android1.png" class="icon-card">
+        <img src="assets/icon/java.svg" class="icon-card">
+<div>
 
         <div class="btn-group">
             <button class="btn-card">edit</button>
