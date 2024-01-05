@@ -213,15 +213,12 @@ select {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  
   justify-content: center;
+}
   
-}.text-card {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.text-card {
   cursor: pointer;
-  max-width: 100%;
+  display: flex; flex-wrap: wrap;
 }
 
 /* Styles for expanded text */
