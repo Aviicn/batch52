@@ -10,7 +10,7 @@ body {
 .nav {
     background-color: #f4f3f3;
     height: 75px;
-    width: 100%;
+    
 
   }
   
@@ -89,7 +89,7 @@ body {
   }
   .hamburger-menu {
     cursor: pointer;
-    display: flex;
+    display: none;
   
 }
 .container-hamburger-menu  {

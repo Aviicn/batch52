@@ -1,5 +1,5 @@
 
-/* Gaya umum untuk kontainer testimonial */
+
 .testimonial-container {
     width: 360px;
     
@@ -14,7 +14,7 @@
 
 }
 
-/* Gaya untuk gambar testimonial */
+
 .testimonial-img{
     max-width: 100%;
 
@@ -23,14 +23,14 @@
    
 }
 
-/* Gaya untuk teks testimonial */
+
 .testimonial-text {
     margin: 10px;
     font-size: large;
     font-style: inherit;
 }
 
-/* Gaya untuk penulis testimonial */
+
 .testimonial-author {
     font-style: italic;
     font-weight: bold;
@@ -38,10 +38,9 @@
     text-align: right;
 }
 
-/* Gaya untuk rating testimonial */
 .testimonial-rating {
     color: gold;
-    text-align: center; /* Ganti warna sesuai preferensi Anda */
+    text-align: center; 
 }
 
 /* Media Queries */
@@ -54,6 +53,7 @@
     .btn-nav{
       display: block;
     }
+    
   }
   
   /* Tablet */
