@@ -85,3 +85,139 @@ body {
     font-size: 20px;
     text-align: center;
   }
+  .hamburger-menu {
+    cursor: pointer;
+    display: none;
+}
+.container-hamburger-menu  {
+    display: none;
+}
+.container-hamburger-menu a {
+    background-color: #111727;
+    color: #fff;
+    text-decoration: none;
+    border: 2px #fff solid;
+    text-align: center;
+    padding: 10px;
+}
+.container-hamburger-menu a:hover {
+    background-color: #f4f3f3;
+    color: #111727;
+    border: 1px #111727 solid;
+}
+.container-hamburger-menu .click {
+    background-color: #f4f3f3;
+    color: #111727;
+    border: 1px #111727 solid;
+}
+
+/* Media Queries */
+/* Laptop */
+@media only screen and  (max-width: 1366px) {
+  html {
+      font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  html {
+      font-size: 62.5%;
+  }
+  /* Navbar */
+  .nav-collapse {
+      display: none;
+  }
+  .hamburger-menu {
+      display: block;
+  }
+  .container-hamburger-menu.active {
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  /* Content */
+  .container-main {
+      max-width: 100%;
+  }
+  .article {
+      max-width: 80%;
+      flex-direction: column;
+      padding: 30px;
+  }
+  .text {
+      max-width: min-content;
+      margin: auto;
+  }
+  .text h1 {
+      font-size: 15px;
+  }
+  .detail {
+      font-size: x-small;
+  }
+  .contact-btn {
+      padding: 5px;
+      width: 80px;
+      font-size: 10px;
+  }
+  .container-cv h3 {
+      font-size: smaller;
+  }
+  .download-cv {
+      width: 18px;
+      margin-right: 20px;
+  }
+  .logo {
+      gap: 10px;
+      justify-content: center;
+  }
+  .logo-icon {
+      width: 20px;
+  }
+  .card {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+  .container-card {
+      max-width: 50%;
+  }
+  .container-card img {
+      max-width: 90%;
+  }
+  .container-card h1 {
+      font-size: small;
+  }
+  .container-card h3 {
+      font-size: smaller;
+  }
+}
+
+/* Mobile Phone */
+@media only screen and  (max-width: 450px) {
+  html {
+      font-size: 55%;
+  }
+  .container-main {
+      width: 100%;
+  }
+  .article {
+      width: 700px; 
+      background-color: #fefefe; 
+      margin: 50px auto; 
+      padding: 0; 
+      box-sizing: border-box;
+      display: flex; 
+      border-radius: 5px;
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .text h1 {
+      margin-top: 20px;
+      font-size: 15px;
+      text-align: center;
+  }
+  .detail {
+      font-size: 8px;
+  }
+}

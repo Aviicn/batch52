@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="assets/css/nav.css" />
   <link rel="stylesheet" href="assets/css/detail.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Inclusive+Sans&family=Inter:wght@200;400;600;900&family=Kanit:wght@300&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
     rel="stylesheet" />
@@ -21,27 +22,35 @@
     <div class="container-nav">
       <ul>
         <li>
-          <img src="assets/img/dumbways logo.png" alt="assets/img/dumbways logo.png" />
+          <img
+            src="assets/img/dumbways logo.png"
+            alt="assets/img/dumbways logo.png"
+          />
         </li>
         <li class="nav-link">
-          <a href="index.html ">Home</a>
+          <a href="index.html " class="btn-nav">Home</a>
         </li>
         <li class="nav-link">
-          <a href="myproject.html">My Project</a>
+          <a href="myproject.html" class="btn-nav">My Project</a>
         </li>
       </ul>
       <div class="btn-contact">
-        <a href="contact.html" class="btn-nav">Contact me</a>
+        <i data-feather="menu" class="hamburger-menu" id="hamburger"></i>
       </div>
     </div>
   </nav>
+  <div class="container-hamburger-menu" id="listNav">
+    <a href="index.html" class="click">Home</a>
+    <a href="myproject.html">My Project</a>
+    <a href="contact.html">Contact Me</a>
+</div>
 
   <!-- Content start -->
   <div class="blog-detail">
     <div class="blog-detail-container">
       <h1 style="margin-bottom: 15px; display: flex;  justify-content: center;">Dumbways Web App</h1>
       <div style="display: flex; align-items: center;">
-        <img src="assets/img/hp4.jpeg" alt="" style="width: 700px; height: 400px; margin: 20px;" />
+        <img src="assets/img/hp4.jpeg" alt="" style="width: 60%; height: 60%; margin: 10px;" />
 
         <table>
 
@@ -166,6 +175,11 @@
     </div>
   </div>
   <!-- Content end -->
+  <script>
+    feather.replace();
+  </script>
+  <script src="assets/js/detail.js"></script>
+  
 </body>
 
 </html>

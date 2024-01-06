@@ -4,9 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+  
   <link rel="stylesheet" href="assets/css/myproject.css" />
   <link rel="stylesheet" href="assets/css/nav.css">
   <script src="https://unpkg.com/feather-icons"></script>
@@ -27,17 +34,23 @@
           />
         </li>
         <li class="nav-link">
-          <a href="index.html ">Home</a>
+          <a href="index.html " class="btn-nav">Home</a>
         </li>
         <li class="nav-link">
-          <a href="myproject.html">My Project</a>
+          <a href="myproject.html" class="btn-nav">My Project</a>
         </li>
       </ul>
       <div class="btn-contact">
         <a href="contact.html" class="btn-nav">Contact me</a>
+        <i data-feather="menu" class="hamburger-menu" id="hamburger"></i>
       </div>
     </div>
   </nav>
+  <div class="container-hamburger-menu" id="listNav">
+    <a href="index.html" class="click">Home</a>
+    <a href="myproject.html">My Project</a>
+    <a href="contact.html">Contact Me</a>
+</div>
   <!-- Navbar end -->
 
   <!-- Form -->
@@ -123,6 +136,9 @@
       <!-- dynamic content would be here -->
     </div>
   </div>
+  <script>
+    feather.replace();
+  </script>
   <script src="assets/js/myproject.js"></script>
 </body>
 

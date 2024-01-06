@@ -43,7 +43,8 @@
 .container-form {
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: auto;
+  width: 55%;
 }
 .form {
   display: flex;
@@ -60,4 +61,51 @@
 .label-contact {
   font-weight: bold;
   font-size: 15px;
+}
+
+/* Media Queries */
+/* Laptop */
+@media only screen and  (max-width: 1366px) {
+  html {
+      font-size: 75%;
+      
+  }
+  .btn-nav{
+    display: block;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 820px) {
+  html {
+      font-size: 62.5%;
+  }
+  /* Navbar */
+  .nav-collapse {
+      display: none;
+  }
+  .hamburger-menu {
+      display: block;
+  }
+  .container-hamburger-menu.active {
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+  }
+  .btn-nav{
+    display: none;
+  }
+
+  /* Form */
+  
+}
+
+/* Mobile Phone */
+@media only screen and  (max-width: 500px) {
+  html {
+      font-size: 55%;
+  }
+  .btn-nav{
+    display: none;
+  }
 }

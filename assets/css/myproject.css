@@ -120,7 +120,7 @@ select {
 
 
 .blog .blog-list .btn-group .btn-card {
-  padding: 4px 19%;
+  padding: 4px 1%;
   border-radius: 4px;
   background: black;
   color: white;
@@ -208,6 +208,7 @@ select {
   background-color: white;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   padding: 1%;
+  margin: auto;
   height: 25%;
   width: 25%;
   border-radius: 8px;
@@ -247,15 +248,70 @@ width: 100%;
   object-fit: cover;
 
 }
+.icon-cards {
+  display: flex; 
+  margin-top:5%;
+}
 .icon-card {
-  padding: 10px;
+  padding: 5px;
   width: 20px; 
 }
-
 .btn-group {
   display: flex;
   text-align: center;
   flex-direction: row;
-  justify-content: space-between;
+  
 }
 
+
+/* Media Queries */
+/* Laptop */
+@media only screen and  (max-width: 1366px) {
+  html {
+      font-size: 75%;
+      
+  }
+  .btn-nav{
+    display: block;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 820px) {
+  html {
+      font-size: 62.5%;
+  }
+  /* Navbar */
+  .nav-collapse {
+      display: none;
+  }
+  .hamburger-menu {
+      display: block;
+  }
+  .container-hamburger-menu.active {
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+  }
+  .btn-nav{
+    display: none;
+  }
+
+  /* Form */
+  .container-form {
+      width: 100%;
+  }
+  .form {
+      width: 60%;
+  }
+}
+
+/* Mobile Phone */
+@media only screen and  (max-width: 500px) {
+  html {
+      font-size: 55%;
+  }
+  .btn-nav{
+    display: none;
+  }
+}
