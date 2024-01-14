@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <title>Contact me</title>
+</head>
+
+</html>
+
+<body>
+ <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5" href="/"><img src="/assets/img/dumbways logo.png "></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active ms-5 fs-5" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active ms-5 fs-5" href="/addproject">Add Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active ms-5 fs-5" href="/testimonial">Testimonials</a>
+          </li>
+        </ul>
+       <a href="/contact"><button class="btn btn-outline-success me-5 text-white btn fs-5" type="submit">Contact
+            Me</button></a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-hamburger-menu" id="listNav">
+     <a href="index">Home</a>
+    <a href="addproject">Add Project</a>
+    <a href="testimonial">Testimonial</a>
+    <a href="contact">Contact Me</a>
+  </div>
+  <!-- Navbar end -->
+  <h1 class="text-center fs-3">GET IN TOUCH</h1>
+    <form class="container form">
+        <div class="mb-3">
+          <label for="inputName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="inputName">
+        </div>
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">Email</label>
+          <input type="text" class="form-control" id="inputEmail">
+        </div>
+        <div class="mb-3">
+          <label for="inputPhone" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="inputPhone">
+        </div>
+        <label for="inputSubject">Subject</label>
+        <select class="form-select form-select-sm mt-2" aria-label="Small select example" id="inputSubject">
+            <option selected id="select">Open this select subject</option>
+            <option value="1" id="select">Frontend Developer</option>
+            <option value="2" id="select">Backend Developer</option>
+            <option value="3"  id="select">Fullstack Developer</option>
+        </select>
+        <div class="mb-3 mt-3">
+            <label for="inputMessage" class="mb-2">Your Message</label>
+            <textarea class="form-control textarea" id="inputMessage"></textarea>
+        </div>
+        <div class="d-flex justify-content-end mt-3">
+            <button type="submit" class="btn text-white" onclick="submitData()">Submit</button>
+        </div>  
+      </form>
+  <script>
+    feather.replace();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+
+</html>

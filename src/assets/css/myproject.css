@@ -1,0 +1,317 @@
+* {
+  text-decoration: none !important;
+  font-family: 'Poppins', sans-serif!important;
+  margin: 0!important;
+  padding: 0!important;
+}
+
+/*project*/
+
+ .blog-form {
+  padding: 50px 0!important;
+  display: flex!important;
+  justify-content: center!important;
+}
+
+.blog-form .form-container {
+  width: 450px!important;
+}
+
+.blog-form .form-container h1 {
+  text-align: center!important;
+  margin-bottom: 40px!important;
+}
+
+.blog-form form label {
+  font-size: 20px!important;
+  font-weight: 400!important;
+}
+
+.blog-form form input,
+textarea,
+select {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+
+.blog-form form textarea {
+  height: 250px;
+  }
+
+.blog-form form .input-blog-image-group {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.blog-form form .input-blog-image-group label p {
+  font-size: 15px;
+}
+
+.blog-form form .input-blog-image-group label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-form form .button-group {
+  text-align: right;
+
+}
+
+.blog-form form .button {
+  background-color: #111727;
+  color: #fff;
+  padding: 5px;
+  width: 100px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.blog hr {
+  border: 1px solid #dbdbdb;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Blog list */
+.blog .blog-list .blog-list-item {
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #dbdbdb;
+  border-radius: 8px;
+  display: flex;
+}
+
+.blog .blog-list .blog-list-item .blog-image {
+  flex: 1;
+}
+
+.blog .blog-list .blog-list-item .blog-image img {
+  max-width: 100%; /* Gambar akan menyesuaikan lebar elemen induknya */
+  height: auto; /* Mencegah gambar terdistorsi */
+  object-fit: cover;
+}
+
+.blog .blog-list .blog-list-item .blog-content {
+  padding-left: 20px;
+  flex: 2;
+}
+
+
+
+.blog .blog-list .btn-group .btn-card {
+  padding: 4px 1%;
+  border-radius: 4px;
+  background: black;
+  color: white;
+}
+
+.blog .blog-list .btn-group .btn-post {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: #ec4d37;
+  color: #fff;
+}
+
+.blog .blog-list h1 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.blog .blog-list .detail-blog-content {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.blog .blog-list .blog-list-item p {
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+/* Blog Detail */
+.myproject {
+  text-align: center; 
+  margin-top: 20px; 
+  font-size: 30px;
+}
+
+.blog-list {
+  margin: 30px; 
+  display: flex; 
+  margin-bottom: 20px; 
+  justify-content: flex-start; 
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.blog-detail-container {
+  width: 80%;
+  margin: 40px 0;
+  border: #000000;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.blog-detail-container img  {
+  width: 100%;
+}
+
+.blog-detail-container h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 120%;
+  margin-bottom: 15px;
+}
+
+.blog-detail-container .author {
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.blog-detail-container p {
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: justify;
+}
+
+.container-card{
+  background-color: white;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 1%;
+  margin: auto;
+  height: 25%;
+  width: 25%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+.text-card {
+  cursor: pointer;
+  display: flex; flex-wrap: wrap;
+}
+
+/* Styles for expanded text */
+.text-card.expanded {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.text-title{
+  margin-top: 4%;
+  color: black;
+  font-weight: bold;
+}
+
+.text-duration{
+  margin-top: 4%;
+  color: rgb(155, 150, 150);
+  font-size: small;
+}
+
+.img-card{
+border-radius: 8px;
+align-items: center;
+width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.icon-cards {
+  display: flex; 
+  margin-top:5%;
+}
+.icon-card {
+  padding: 5px;
+  width: 20px; 
+}
+.btn-group {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  
+}
+
+
+/* Media Queries */
+/* Laptop */
+@media only screen and  (max-width: 1366px) {
+  html {
+      font-size: 75%;
+      
+  }
+  .btn-nav{
+    display: block;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 820px) {
+  html {
+      font-size: 62.5%;
+  }
+  /* Navbar */
+  .nav-collapse {
+      display: none;
+  }
+  .hamburger-menu {
+      display: block;
+  }
+  .container-hamburger-menu.active {
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+  }
+  .btn-nav{
+    display: none;
+  }
+
+  /* Form */
+  .container-form {
+      width: 100%;
+  }
+  .form {
+      width: 60%;
+  }
+}
+
+/* Mobile Phone */
+@media only screen and  (max-width: 500px) {
+  html {
+      font-size: 55%;
+  }
+  .btn-nav{
+    display: none;
+  }
+}

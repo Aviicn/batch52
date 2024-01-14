@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial</title>
+  <link rel="stylesheet" href="assets/css/tesimonial.css" />
+  <link rel="stylesheet" href="assets/css/nav.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5" href="/"><img src="/assets/img/dumbways logo.png "></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active ms-5 fs-5" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active ms-5 fs-5" href="/addproject">Add Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active ms-5 fs-5" href="/testimonial">Testimonials</a>
+          </li>
+        </ul>
+        <a href="/contact"><button class="btn btn-outline-success me-5 text-white btn fs-5" type="submit">Contact
+            Me</button></a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-hamburger-menu" id="listNav">
+    <a href="index">Home</a>
+    <a href="addproject">Add Project</a>
+    <a href="testimonial">Testimonial</a>
+    <a href="contact">Contact Me</a>
+  </div>
+  <!-- Navbar end -->
+
+  <!-- Testimonials start -->
+  <div>
+    <h1 style="text-align: center; ">My Testimonials</h1>
+  <h2 style="text-align: center;">Rating By Star</h2>
+  <div class="testimonial-rating" style="text-align: center;">
+    <button style="background-color: black; color: white; width: 50px; height: 30px; margin: 10px;"
+      class="Rating-btn" onclick="allTestimonials()">All</button>
+   <button style="background-color: black; color: white; width: 50px; height: 30px; margin: 10px;"
+  class="Rating-btn" onclick="filterTestimonials(1)">1 <i class="bi bi-star-fill"></i></button>
+
+<button style="background-color: black; color: white; width: 50px; height: 30px; margin: 10px;"
+  class="Rating-btn" onclick="filterTestimonials(2)">2 <i class="bi bi-star-fill"></i></button>
+
+<button style="background-color: black; color: white; width: 50px; height: 30px; margin: 10px;"
+  class="Rating-btn" onclick="filterTestimonials(3)">3 <i class="bi bi-star-fill"></i></button>
+
+<button style="background-color: black; color: white; width: 50px; height: 30px; margin: 10px;"
+  class="Rating-btn" onclick="filterTestimonials(4)">4 <i class="bi bi-star-fill"></i></button>
+
+<button style="background-color: black; color: white; width: 50px; height: 30px; margin: 10px;"
+  class="Rating-btn" onclick="filterTestimonials(5)">5 <i class="bi bi-star-fill"></i></button>
+
+  </div>
+    <div id="testimonials">
+
+    </div>
+  </div>
+  <!-- Testimonials end -->
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+  <script src="/js/testimonial.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/testimonial.js"></script>
+</body>
+
+</html>
